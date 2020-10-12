@@ -8,6 +8,7 @@ Nota: la salida del programa debe ser: El primo numero 4 es: 7
 #include <iostream>
 using namespace std;
 
+//Prototipo funcion llamada numero primo
 bool numeroprimo(int numero);
 
 int main(){
@@ -17,6 +18,7 @@ int main(){
     cout << "Ingrese el numero: ";
     cin >> posicion_numero_primo;
 
+    //Ciclo while para encontrar la posicion del numero primo
     int numero = 0;
     int contador = 0;
     while (contador != posicion_numero_primo){
@@ -32,7 +34,7 @@ int main(){
 
 }
 
-
+//Funcion numero primo dice si el numero que se va generando en el ciclo while es primo
 bool numeroprimo(int numero){
 
     int contador = 0;
